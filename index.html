@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>	
+	<title>Astoria</title>	
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div class="astoria">
 	<div class="container">
 		<header>
 			<div class="logo"><a href="#"><img src="img/astoria.png" alt="astoria"></a></div>
@@ -23,14 +24,16 @@
 				</ul>
 			</nav>
 		</header>
-		<h2 class="main-caption">CONTACT US</h2>
+		<h2 class="main-caption">contact us</h2>
+		<p class="txt">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
 		<div class="contact-block">
 			<div class="contact-box">
-				<h4 class="caption">Address</h4>
-				<h5>Acrostia</h5>
-				<p>Sevenoaks Rd <br>Sevenoaks TN14 7HR, UK</p>
+				<div class="info-box">
+					<h4 class="caption">Address</h4>
+					<h5 class="caption-small">Acrostia</h5>
+					<p>Sevenoaks Rd <br>Sevenoaks TN14 7HR, UK</p>
 
-				<table class="contact-table">
+					<table class="contact-table">
 						<tr>
 							<td>Phone:</td>
 							<td><a href="#" class="contact">+44 555 555 555</a></td>
@@ -48,34 +51,37 @@
 							<td><a href="#" class="contact">Ac0stia</a></td>
 						</tr>
 					</table>
+				</div>
+				<div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d196236.05735925311!2d-94.90873377607056!3d39.78032726129197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1494319360601" width="260" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
 			</div>
-
-
 			<div class="contact-box contact-box__form--question">
 				<h4 class="caption">Ask a question</h4>
 				<form action="#">
 					<div class="form__row">
-						<input id="first_name" type="text" class="req form__field form__field--w100" placeholder="Name">
+						<input id="first_name" type="text" class="form__field form__field--w100" placeholder="Name">
 					</div>
 					<div class="form__row">
-						<input id="last_name" type="text" class="form__field form__field--w100" placeholder="Your Email">
+						<input id="last_name" type="text" class="req form__field form__field--w100" placeholder="Your Email">
 					</div>
-					<textarea name="question" class="question"></textarea>
-					<button class="btn">send</button>		
+					<textarea name="question" class="question" placeholder="Your question"></textarea>
+					<button class="btn">send</button>
 				</form>
 			</div>
 			
 		</div>
-
-
+	</div>
 	</div>
 
 	<footer>
 		<div class="container">
-			<a href="#" class="social-ic social-ic__fb"></a>
-			<a href="#" class="social-ic social-ic__tw"></a>
-			<a href="#" class="social-ic social-ic__gl"></a>
-			<a href="#" class="social-ic social-ic__in"></a>
+			<div class="social-box">
+				<a href="#" class="social-ic social-ic__fb"></a>
+				<a href="#" class="social-ic social-ic__tw"></a>
+				<a href="#" class="social-ic social-ic__gl"></a>
+				<a href="#" class="social-ic social-ic__in"></a>
+			</div>
 		</div>
 	</footer>
 	<script src="vendor/jquery/jquery-3.2.0.min.js"></script>

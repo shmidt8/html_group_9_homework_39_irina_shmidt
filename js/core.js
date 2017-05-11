@@ -1,15 +1,6 @@
 $(document).ready(function(){
 
-	$('.phone').inputmask({ mask: "0 (999) 99-99-99", clearIncomplete: true,
-			onincomplete: function(){
-        $(this).addClass('error').removeClass('active');       				
-      },
-			oncomplete: function(){
-        $(this).removeClass('error').addClass('active');        				
-      }			
-		});	
-
-	var error_txt = '<em>Это поле нужно обязательно заполнить</em>';
+	var error_txt = '<em>Это поле нужно обязательно заполнить!</em>';
 
 	$('.req').focusout(function(){
 			if($(this).val() != ''){          
