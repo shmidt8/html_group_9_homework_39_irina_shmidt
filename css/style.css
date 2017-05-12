@@ -98,7 +98,7 @@ body{
 .map{
 	float: right;
 	width: 45%;
-	margin: 0 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 
@@ -114,7 +114,6 @@ body{
 }
 
 .form__field{
-	color: #fff;
 	height: 28px;
 	background: #68a097;
 	border: none;
@@ -131,16 +130,13 @@ body{
 	background: #68a097;
 	padding: 14px 0 14px 5px;
 	margin: 0 0 30px 0;
-	color: #fff;
 	border: none;
 	resize: vertical;
 }
-.form__field.active{
+.question:focus,
+.form__field:focus{
 	background: #fff;
 	border-color: green;
-}
-.form__field.error{
-	border-color: red;
 }
 .form__label{
 	display: block;
@@ -195,14 +191,18 @@ footer{
 	opacity: 0.8;
 }
 .social-ic__fb{
-
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/ic.svg);
+	background-repeat:no-repeat;
+	background-position: 0px 0px;
+	border: 1px solid red;
 }
-.social-ic__tw{
-
-}
-.social-ic__gl{
-
-}
-.social-ic__in{
+.fa{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 26px;
+	line-height: 60px;
 
 }
